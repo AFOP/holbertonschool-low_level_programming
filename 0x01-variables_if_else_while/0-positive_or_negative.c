@@ -8,8 +8,8 @@
  *
  * Description:  A column of asterisks on the left side,
  * with beginning and ending almost-blank lines.
- * 
  */
+/* Positivo o Negativo */
 int main(void)
 {
 	int n;
