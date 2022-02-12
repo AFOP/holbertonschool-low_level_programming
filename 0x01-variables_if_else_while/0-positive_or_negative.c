@@ -2,13 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* more headers goes there 
-* print_hello - Prints hello 
-* betty style doc for function main goes there
+*more headers goes th
+*print_hello - Prints hello
+*betty style doc for function main goes there
 */
 int main(void)
 {
 	int n;
+	
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
