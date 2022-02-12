@@ -2,13 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - positive or negative
- * Comments in C source code.
- * Please use it consistently.
- *
- * Description: A column of asterisks on the left side,
- * With beginning and ending almost-blank lines.
- *
+ * main - the function find the positive, negativo o zero of n
+ * Return: 0
  */
 int main(void)
 {
