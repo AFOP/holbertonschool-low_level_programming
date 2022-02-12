@@ -2,9 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-*more headers goes th
-*print_hello - Prints hello
-*betty style doc for function main goes there
+ * op_add - Say one number is positive_or_negative 
+ *
+ * Description: This is a longer description.
+ * Don't forget that a line should not exceed 80 characters.
+ * But you're totally free to use several lines to properly
+ * describe your function
+ * Return: zero 
 */
 int main(void)
 {
@@ -27,3 +31,4 @@ int main(void)
 	}
 	return (0);
 }
+
