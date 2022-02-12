@@ -1,19 +1,18 @@
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * op_add - Say one number is positive_or_negative 
+/*
+ * positive_or_negative
+ * comments in C source code.
+ * Please use it consistently.
  *
- * Description: This is a longer description.
- * Don't forget that a line should not exceed 80 characters.
- * But you're totally free to use several lines to properly
- * describe your function
- * Return: zero 
-*/
+ * Description:  A column of asterisks on the left side,
+ * with beginning and ending almost-blank lines.positive_or_negative
+ */
 int main(void)
 {
 	int n;
-	
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
