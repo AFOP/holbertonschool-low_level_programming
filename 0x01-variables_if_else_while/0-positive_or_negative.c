@@ -8,6 +8,7 @@
  *
  * Description:  A column of asterisks on the left side,
  * with beginning and ending almost-blank lines.
+ * function main: return zero
  */
 int main(void)
 {
