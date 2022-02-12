@@ -7,7 +7,7 @@
  * Please use it consistently.
  *
  * Description:  A column of asterisks on the left side,
- * with beginning and ending almost-blank lines.positive_or_negative
+ * with beginning and ending almost-blank lines.
  */
 int main(void)
 {
