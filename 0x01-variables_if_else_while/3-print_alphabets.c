@@ -15,9 +15,9 @@ int main(void)
 		putchar(min);
 	}
 	for (may = 'A'; may <= 'Z'; may++)
-        {
-                putchar(may);
-        }
+	{
+		putchar(may);
+	}
 	putchar('\n');
 	return (0);
 }
