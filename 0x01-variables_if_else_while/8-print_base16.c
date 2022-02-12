@@ -15,9 +15,9 @@ int main(void)
 		putchar(n);
 	}
 	for (chalfb = 'a'; chalfb <= 'f'; chalfb++)
-        {
-                putchar(chalfb);
-        }
+	{
+		putchar(chalfb);
+	}
 	putchar('\n');
 	return (0);
 }
