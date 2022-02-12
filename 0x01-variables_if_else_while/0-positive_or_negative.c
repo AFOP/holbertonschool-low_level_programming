@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /*
- * positive_or_negative
+ * positive or negative
  * comments in C source code.
  * Please use it consistently.
  *
