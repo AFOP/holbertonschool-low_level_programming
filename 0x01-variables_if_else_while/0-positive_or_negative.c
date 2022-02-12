@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-   * main - positive or negative
-   * Comments in C source code.
-   * Please use it consistently.
-   *
-   * Description: A column of asterisks on the left side,
-   * With beginning and ending almost-blank lines.
-   *
-   */
+ * main - positive or negative
+ * Comments in C source code.
+ * Please use it consistently.
+ *
+ * Description: A column of asterisks on the left side,
+ * With beginning and ending almost-blank lines.
+ *
+ */
 int main(void)
 {
 	int n;
