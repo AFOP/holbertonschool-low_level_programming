@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+* postive_or_negative - function prints positive or negative 
+* Return: 0
+*/ 
 void positive_or_negative(int i)
 {
 /* your code goes there */
