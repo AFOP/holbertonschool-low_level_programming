@@ -2,7 +2,7 @@
 
 /**
  * print_most_numbers - print numbers one to nine but do not print 2 and 4
- * @i: numbers the zero to nine
+ * 
  * Return: always 0.
  */
 
