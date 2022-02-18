@@ -4,6 +4,7 @@
  * @n: number in main
  * Return: always 0
  */
+
 void print_line(int n)
 {
 	int i, max;
@@ -15,6 +16,6 @@ void print_line(int n)
 		{
 			_putchar('_');
 		}
-	}	
+	}
 	_putchar('\n');
 }
