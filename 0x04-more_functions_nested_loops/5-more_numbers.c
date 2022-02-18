@@ -4,9 +4,7 @@
  * more_numbers - print 10 times the numbers, from 0 to 14
  * @i: rows but _putchar is char only to nine
  * @j: columns
- * 
  */
-
 void more_numbers(void)
 {
 	int i, j;
