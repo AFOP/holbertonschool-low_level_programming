@@ -2,7 +2,7 @@
 
 /**
  * main - prints 0 to 100 with Bizz for 3 Buzz for 5 and 3 y 5 FizzBuzz
- * Return: Always 0.
+ * Return: always 0
  */
 int main(void)
 {
@@ -27,6 +27,5 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
-	printf("\n");
 	return (0);
 }
