@@ -15,9 +15,19 @@ void puts_half(char *str)
 	{
 		i++;
 	}
-	for (c = i / 2; c < i; c++)
+	if (i % 2 == 0)
 	{
-		_putchar(str[c]);
+		for (c = i / 2; c < i; c++)
+		{
+			_putchar(str[c]);
+		}
+	}
+	else
+	{
+		for (c = (i - 1) / 2; c < i - 1; n++)
+		{
+			_putchar(str[c + 1]);
+		}
 	}
 	_putchar('\n');
 }
