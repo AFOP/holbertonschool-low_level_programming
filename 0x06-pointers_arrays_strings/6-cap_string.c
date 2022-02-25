@@ -2,30 +2,32 @@
 
 /**
  * cap_string - capitalizes all words of a string.
- * @s: pointer with the content of the string
+ * @str: pointer with the content of the string
  * Return: the content of one pointer
  */
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-	int i, j;
+	int i = 0;
 
-	char spe[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	if (str[0] >= 'a' && str[0] <= 'z')
+		str[0] = str[0] - 32;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (str[i])
 	{
-		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
-			s[i] -= 32;
-
-		for (j = 0; j < 13; j++)
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' ||
+			str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' ||
+			str[i] == '"' || str[i] == 40 || str[i] == 41 || str[i] == '{' ||
+			str[i] == '}')
 		{
-			if (s[i] == spe[j])
+			i++;
+			if (str[i] >= 'a' && str[i] <= 'z')
 			{
-				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
-				{
-					s[i + 1] -= 32;
-				}
+				str[i] = str[i] - 32;
 			}
 		}
+		else
+			i++;
 	}
-	return (s);
+
+	return (str);
 }
