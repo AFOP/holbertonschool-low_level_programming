@@ -1,16 +1,13 @@
 #include "main.h"
 
 /**
- * mynameis - prints its name, followed by a new line
+ * main - prints its name, followed by a new line
  * @argc: The size of the argv array
  * @argv: An array of size argc
- * Return: nothing
+ * Return: zero
  */
-int mynameis(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	if (argc > 1)
-	{	
-		_putchar (*argv[0]);
-	}
-	return(0);
+	printf("%s\n", argv[0]);
+	return (0);
 }
