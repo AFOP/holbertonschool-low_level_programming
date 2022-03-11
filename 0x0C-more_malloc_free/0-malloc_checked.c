@@ -5,7 +5,7 @@
 /**
  * malloc_checked - allocates memory using malloc
  * @b: type of variable
- * Return: normally 0 or 98.
+ * Return: normally the pointer or 98 in case of mistake.
  */
 void *malloc_checked(unsigned int b)
 {
@@ -15,7 +15,6 @@ void *malloc_checked(unsigned int b)
 
 	if (ptr == NULL)
 	{
-		free(ptr);
 		exit(98);
 	}
 	return (ptr);
