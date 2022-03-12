@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- *  string_nconcat - concatenates two strings using malloc
+ * string_nconcat - concatenates two strings using malloc
  * @s1: string one
  * @s2: string two
  * @n: bytes of s2
@@ -19,15 +19,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 
 	if (s2 == NULL)
-		S2 = "";
+		s2 = "";
 
 	if (n >= strlen(s2))
 		n = strlen(s2);
 
 	concat = malloc(sizeof(char) * (strlen(s1) + strlen(s2)));
 	if (concat == NULL)
+	{	
 		free(concat);
 		return (NULL);
+	}
 
 	for (i = 0; i < strlen(s1); i++)
 	{
