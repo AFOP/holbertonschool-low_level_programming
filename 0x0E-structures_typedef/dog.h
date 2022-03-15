@@ -1,14 +1,13 @@
-#ifndef _dog_h_
-#define _dog_h_
+#ifndef _dog_
+#define _dog_
 
 /**
  * struct dog - struct of the dog
- * @name: name of the dog
+ * @name: pointer to a char
  * @age: age of the dog
- * @owner: owner of the dog
- * Description: struct called "dog"
+ * @owner: pointer to a char
  */
-struct dog 
+struct dog
 {
 	char *name;
 	float age;
