@@ -38,6 +38,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		printf("%s\n", cp);
 	else
 		printf("(nil)\n");
-	
 	va_end(args);
 }
