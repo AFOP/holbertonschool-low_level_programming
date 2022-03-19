@@ -28,13 +28,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		cp = va_arg(args, char *);
 
-		if (cp != NULL)
+		if (cp)
 			printf("%s%s", cp, separator);
 		else
 			printf("(nil)%s", separator);
 	}
 	cp = va_arg(args, char *);
-	if (cp != NULL)
+	if (cp)
 		printf("%s\n", cp);
 	else
 		printf("(nil)\n");
