@@ -8,10 +8,9 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int dnumber = 0, base;
 	int lg = 0;
-	
+
 	if (!b)
 		return (0);
-	
 	for (lg = 0; b[lg] != '\0'; lg++)
 		;
 
