@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_to_uint - converts a binary number
+ * print_binary - converts a binary number
  * @n: number
  * Return: Nothing
  */
