@@ -13,12 +13,12 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	if (head == NULL)
 		return (NULL);
 	compare = head;
-	while (compare->next != NULL)
+	while (compare != NULL)
 	{
 		if (i == index)
 			return (compare);
-		i++;
 		compare = compare->next;
+		i++;
 	}
 	return (NULL);
 }
