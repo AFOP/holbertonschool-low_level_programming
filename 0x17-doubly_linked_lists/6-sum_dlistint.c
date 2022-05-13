@@ -6,5 +6,16 @@
  */
 int sum_dlistint(dlistint_t *head)
 {
+	dlistint_t *psuma;
+	int suma = 0;
 
+	if (head == NULL)
+		return (0);
+	psuma = head;
+	while (psuma != NULL)
+	{
+		suma += psuma->n;
+		psuma = psuma->next;
+	}
+	return (suma);
 }
