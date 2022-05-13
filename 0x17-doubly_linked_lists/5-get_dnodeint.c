@@ -10,7 +10,9 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	dlistint_t *compare;
 	unsigned int i = 0;
 
-	if (index <= 0)
+	if (head == NULL)
+		return (NULL);
+	if (index < 0)
 		return (NULL);
 	compare = head;
 	while (compare->next != NULL)
