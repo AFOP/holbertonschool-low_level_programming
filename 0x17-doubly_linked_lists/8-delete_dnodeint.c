@@ -55,8 +55,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			free(del_n);
 			return (1);
 		}
-		nodo = nodo->next;
-		i++;
+		nodo = nodo->next, i++;
 	}
 	return (-1);
 }
