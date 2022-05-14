@@ -9,6 +9,7 @@ void del_node(dlistint_t *del_n)
 	del_n->next = NULL;
 	del_n->prev = NULL;
 	del_n = NULL;
+	free(del_n);
 }
 /**
  * delete_dnodeint_at_index - deletes the node at index
