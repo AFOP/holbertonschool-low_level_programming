@@ -23,6 +23,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	copy_k = strdup(key);
 	copy_v = strdup(value);
+	if (copy_k == NULL || copy_v == NULL)
+	{
+		free(copy_k);
+		free(copy_v);
+		return (0);
+	}
 	node->key = copy_k;
 	node->value = copy_v;
 	node->next = ht->array[s];
