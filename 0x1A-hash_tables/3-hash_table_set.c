@@ -2,6 +2,7 @@
 
 /**
  * hash_table_set - function that adds an element to the hash table
+ * @ht: pointer of hash table
  * @key: where key is the key
  * @value: is the value associated with the key, can be empty
  * Return: 1 if it succeeded, 0 otherwise
@@ -12,7 +13,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node;
 	unsigned long int s = 0;
 
-	if (!ht)
+	if (!ht || !key || !value)
 		return (0);
 	s = key_index((unsigned char *)key, ht->size);
 	node = malloc(sizeof(hash_node_t));
