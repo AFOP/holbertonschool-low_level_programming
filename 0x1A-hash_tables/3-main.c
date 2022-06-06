@@ -7,7 +7,6 @@
 #include <string.h>
 #include <stdio.h>
 #include "hash_tables.h"
-
 void _hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
@@ -30,7 +29,6 @@ void _hash_table_print(const hash_table_t *ht)
 		printf("\n");
 	}
 }
-
 /**
  * main - check the code for Holberton School students.
  *
