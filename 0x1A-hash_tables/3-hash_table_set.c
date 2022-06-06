@@ -13,7 +13,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node;
 	unsigned long int s = 0;
 
-	if (!key)
+	if (!ht || !key)
 		return (0);
 	s = key_index((unsigned char *)key, ht->size);
 	node = malloc(sizeof(hash_node_t));
@@ -27,6 +27,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (copy_k == NULL)
 	{
 		free(copy_k);
+		return (0);
+	}
+	if (ht->array[s] == key)
+	{
+		node->value = copy_v;
 		return (0);
 	}
 	node->key = copy_k;
