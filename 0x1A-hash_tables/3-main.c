@@ -10,13 +10,9 @@
  */
 int main(void)
 {
-    hash_table_t *ht;
+	int ret;
 
-    ht = hash_table_create(1024);
-    hash_table_set(ht, "mentioner", "cool");
-    hash_table_set(ht, "hetairas", "cool2");
-    hash_table_set(ht, "heliotropes", "cool3");
-    hash_table_set(ht, "neurospora", "cool4");
-    hash_table_set(ht, "betty", "cool5");
-    return (EXIT_SUCCESS);
+	ret = hash_table_set(NULL, "Holberton", "is cool");
+	printf("%d\n", ret);
+	return (EXIT_SUCCESS);
 }
