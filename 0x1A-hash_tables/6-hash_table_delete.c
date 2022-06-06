@@ -7,11 +7,11 @@
  */
 void hash_table_delete(hash_table_t *ht)
 {
-    long unsigned int i;
+	unsigned long int i;
 
-    for (i = 0; i < ht->size; i++)
-    {
-        free(ht->array[i]);
-    }
-    free(ht);
+	for (i = 0; i < ht->size; i++)
+	{
+		free(ht->array[i]);
+	}
+	free(ht);
 }
