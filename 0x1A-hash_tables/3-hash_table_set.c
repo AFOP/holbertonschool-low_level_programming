@@ -27,12 +27,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
 	{
+		free(copy_k);
+		free(copy_v);
 		free(node);
 		return (0);
 	}
 	if (copy_k == NULL)
 	{
 		free(copy_k);
+		free(copy_v);
+		free(node);
 		return (0);
 	}
 	node->key = copy_k;
