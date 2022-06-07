@@ -18,9 +18,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	s = key_index((unsigned char *)key, ht->size);
 	if (ht->array[s] == NULL)
 		return (NULL);
-	if (ht->array[s] && strcmp(ht->array[s]->key, key) == 0)
+	while (ht->array[s])
 	{
-		value = ht->array[s]->value;
+		if (strcmp(ht->array[s]->key, key) == 0)
+			value = ht->array[s]->value;
+		ht->array[s] = ht->array[s]->next;
 	}
 	return (value);
 }
