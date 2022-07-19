@@ -10,7 +10,7 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
-all: executable clean oclean fclean
+all: executable
 
 executable:$(OBJ)
 	${CC} $(OBJ) -o $(NAME)
