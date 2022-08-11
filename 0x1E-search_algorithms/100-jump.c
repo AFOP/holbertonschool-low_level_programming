@@ -33,7 +33,7 @@ int iqual(int *array, int prev, int step, int value, int hight)
     }
     if (prev > hight)
     {
-        indx = prev - sqrt(hight);
+        indx = prev - r;
         prev2 = indx;
     }
     if (value == 0)
