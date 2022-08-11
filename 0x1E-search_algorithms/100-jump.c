@@ -36,7 +36,7 @@ int iqual(int *array, int prev, int step, int value, int hight)
         prev2 = indx;
     }
     printf("Value found between indexes [%d] and [%d]\n", prev2, prev);
-    while (indx < prev + 1 || indx < hight)
+    while (indx <= hight)
     {
         printf("Value checked array[%d] = [%d]\n", indx, array[indx]);
         if (array[indx] == value)
@@ -66,19 +66,7 @@ int jump_search(int *array, size_t size, int value)
         prev = step;
         step += sqrt(size);
         if (prev > hight)
-        {
-            if (value > 99)
-            {
-                value = (value / 100);
-                break;
-            }
-            if (value > 9)
-            {
-                value = (value / 10);
-                break;
-            }
-            return -1;
-        }
+            break;
     }   
     index = iqual(array, prev, step, value, hight);
     return (index);
