@@ -60,6 +60,10 @@ int jump_search(int *array, size_t size, int value)
     int step = sqrt(size);
     int index = 0, prev = 0, hight = size - 1;
 
+    if (!value)
+        return (-1);
+    if (size <= 0)
+        return (-1);
     if (array)
     {
         while (array[min(prev, hight)] < value)
