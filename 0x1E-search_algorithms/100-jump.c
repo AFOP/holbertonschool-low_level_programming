@@ -60,14 +60,18 @@ int jump_search(int *array, size_t size, int value)
     int step = sqrt(size);
     int index = 0, prev = 0, hight = size - 1;
 
-    while (array[min(prev, hight)] < value)
+    if (array)
     {
-        printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
-        prev = step;
-        step += sqrt(size);
-        if (prev > hight)
-            break;
-    }   
-    index = iqual(array, prev, step, value, hight);
-    return (index);
+        while (array[min(prev, hight)] < value)
+        {
+            printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
+            prev = step;
+            step += sqrt(size);
+            if (prev > hight)
+                break;
+        }   
+        index = iqual(array, prev, step, value, hight);
+        return (index);
+    }
+    return (-1);
 }
