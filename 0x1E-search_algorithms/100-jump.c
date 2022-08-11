@@ -20,10 +20,11 @@ int min(int a, int b){
  * @value: is the value to search
  * Return: return index of array
  */
-int iqual(int *array, int prev, int step, int value, int hight, size_t size)
+int iqual(int *array, int prev, int step, int value, int hight)
 {
-    int indx = prev - sqrt(size) + 1;
-    int prev2 = (prev - sqrt(size)) + 1;
+    int r = sqrt(hight);
+    int indx = (prev - r);
+    int prev2 = (prev - r);
 
     if (prev2 == prev)
     {
@@ -32,7 +33,7 @@ int iqual(int *array, int prev, int step, int value, int hight, size_t size)
     }
     if (prev > hight)
     {
-        indx = prev - sqrt(size);
+        indx = prev - sqrt(hight);
         prev2 = indx;
     }
     if (value == 0)
@@ -63,8 +64,8 @@ int iqual(int *array, int prev, int step, int value, int hight, size_t size)
  */
 int jump_search(int *array, size_t size, int value)
 {
-    int step = sqrt(size);
     int index = 0, prev = 0, hight = size - 1;
+    int step = sqrt(hight);
 
     if (size <= 0)
         return (-1);
@@ -78,7 +79,7 @@ int jump_search(int *array, size_t size, int value)
             if (prev > hight)
                 break;
         }   
-        index = iqual(array, prev, step, value, hight, size);
+        index = iqual(array, prev, step, value, hight);
         return (index);
     }
     return (-1);
